@@ -1,0 +1,29 @@
+<doctype>
+<html>
+
+<head>
+	<script src="scripts/lib/jQuery-1.10.2.js" ></script>
+	
+	<script src="scripts/rest/model/User.js" ></script>
+	<script src="scripts/rest//model/Location.js" ></script>
+	
+	<script src="scripts/rest/api/UsercrudApi.js" ></script>
+	<script src="scripts/client/CallApi.js" ></script>
+	<script src="scripts/client/CallApiSwagger.js" ></script>
+</head>
+
+<body>
+<h1>Codegen Javascript test</h1>
+<h2>Manual API call</h2>
+<input type="button" onclick="callApi()" value="callApi" />
+<input type="button" onclick="alert('myGlobalUser1.firstname: ' + myGlobalUser1.firstname)" value="alertFirstname"/>
+<br/>
+
+<h2>Swagger-enabled API call</h2>
+<input type="button" onclick="callApiSwagger()" value="callApi" />
+<input type="button" onclick="alert('myGlobalUser.firstname: ' + myGlobalUser.getFirstname())" value="alertFirstname"/>
+
+
+
+</body>
+</html>
